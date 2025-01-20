@@ -1,7 +1,7 @@
 # Selective Attention and Convolution: A Novel Approach to Sequence-Based Text Classification
 
 ## **Abstract**
-Text classification plays a vital role in various applications such as e-commerce, search engines, and content categorization. This study proposes a novel hybrid framework that combines Convolutional Neural Networks (CNN) and Self-Attention mechanisms to address the challenges of sequence data classification. Through extensive ablation studies and comparisons with traditional models, the proposed architecture demonstrates improved efficiency and accuracy in handling text-based tasks.
+Text classification.....
 
 ---
 
