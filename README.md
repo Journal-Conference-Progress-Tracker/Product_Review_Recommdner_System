@@ -1,120 +1,97 @@
 # Selective Attention and Convolution: A Novel Approach to Sequence-Based Text Classification
 
-## Abstract
-Text classification is a fundamental task in natural language processing with applications in search engines, recommendation systems, and e-commerce. However, traditional models like Naive Bayes and KNN are computationally expensive and lack the ability to handle complex textual features effectively. In this paper, we propose a novel hybrid framework combining Convolutional Neural Networks (CNN) and Selective Attention mechanisms to improve classification performance and efficiency. Ablation studies are conducted to evaluate the impact of each component. The proposed model demonstrates superior performance compared to traditional methods and deep learning baselines across multiple datasets.
+## **Abstract**
+Text classification plays a vital role in various applications such as e-commerce, search engines, and content categorization. This study proposes a novel hybrid framework that combines Convolutional Neural Networks (CNN) and Self-Attention mechanisms to address the challenges of sequence data classification. Through extensive ablation studies and comparisons with traditional models, the proposed architecture demonstrates improved efficiency and accuracy in handling text-based tasks.
 
 ---
 
-## 1. Introduction
+## **1. Introduction**
+### **1.1 Motivation**
+- Text classification is fundamental for applications like search engines and e-commerce.
+- Efficient classification allows for better organization and retrieval of articles and products.
+  
+### **1.2 Challenges**
+- High computational cost in sequence processing.
+- Traditional models like Naive Bayes, KNN, and Autoencoders fail to handle complex textual patterns effectively.
 
-### 1.1 Background
-- Text classification is crucial for organizing, searching, and retrieving information, especially in e-commerce and search engines.
-- Challenges include handling large-scale text data, capturing complex linguistic features, and balancing computational efficiency with accuracy.
-
-### 1.2 Limitations of Existing Methods
-- **Naive Bayes**: Simple but suffers from zero-frequency issues and poor performance on long sequences.
-- **KNN**: High accuracy but computationally expensive, especially with large datasets.
-- **Autoencoders/DNN**: Require large-scale parameters, leading to inefficiency in sequence data processing.
-
-### 1.3 Contributions
-- Propose a hybrid CNN and Selective Attention framework for text classification.
-- Conduct ablation studies to evaluate the contribution of convolutional and attention mechanisms.
-- Demonstrate scalability and accuracy improvements on benchmark datasets.
+### **1.3 Contributions**
+- Propose a hybrid framework combining CNN for local feature extraction and Self-Attention for global dependencies.
+- Introduce a Selective Attention mechanism to improve feature focus.
+- Conduct extensive ablation studies to validate the contributions of each component.
 
 ---
 
-## 2. Related Work
-### 2.1 Traditional Text Classification Models
-- Naive Bayes and KNN: Early approaches to text classification.
-- Limitations in handling complex linguistic structures and computational demands.
-
-### 2.2 Deep Learning Approaches
-- **CNN**: Known for capturing local features through convolutions.
-  - Kim, Y. (2014). *Convolutional Neural Networks for Sentence Classification*.
-- **Self-Attention Mechanisms**: Effective in capturing long-range dependencies.
-  - Vaswani, A. (2017). *Attention Is All You Need*.
-
-### 2.3 Hybrid Models and Ablation Studies
-- Recent research exploring the integration of CNN and attention for improved classification performance.
+## **2. Related Work**
+- **CNN in Text Classification**: Kim et al. (2014) demonstrated CNN's ability to extract local n-gram features effectively.
+- **Self-Attention Mechanisms**: Vaswani et al. (2017) introduced attention as a mechanism to capture global dependencies.
+- **Limitations of Traditional Models**: Naive Bayes and KNN struggle with long sequences and computational efficiency.
+- **Hybrid Architectures**: Recent works explored the combination of CNN and attention mechanisms for enhanced performance.
 
 ---
 
-## 3. Methodology
+## **3. Methodology**
+### **3.1 Model Architecture**
+1. **Embedding Layer**: Converts input text into dense vector representations.
+2. **Convolutional Layers**: Extract local patterns and n-gram features.
+3. **Self-Attention Mechanism**: Captures global dependencies and highlights critical features.
+4. **Selective Attention**: Filters noise and enhances important parts of the sequence.
+5. **Fully Connected Layers**: Produces the final classification output.
 
-### 3.1 Model Architecture
-1. **Embedding Layer**:
-   - Pre-trained word embeddings or learned embeddings to initialize input.
-2. **Convolutional Layer (1D CNN)**:
-   - Extracts n-gram features from the text sequence.
-3. **Selective Attention Mechanism**:
-   - Focuses on critical parts of the sequence, enhancing interpretability and reducing noise.
-4. **Output Layer**:
-   - Fully connected layers followed by softmax for classification.
-
-### 3.2 Ablation Study Design
-- Variants tested:
+### **3.2 Ablation Studies**
+- **Combinations Tested**:
   1. CNN + Self-Attention.
   2. CNN only.
   3. Self-Attention only.
-  4. No CNN, no Self-Attention (Baseline).
+  4. No CNN, No Self-Attention (baseline).
 
 ---
 
-## 4. Experiments
+## **4. Experiments**
+### **4.1 Dataset**
+- **E-commerce Product Reviews**: Categorization of product reviews into multiple classes.
+- **Benchmark Text Datasets**: IMDB, Yelp Reviews, etc.
 
-### 4.1 Datasets
-- **Amazon Reviews**: Product reviews for sentiment and category classification.
-- **MovieLens**: Film-related metadata for genre prediction.
-- **Custom Scam Detection Dataset**: Evaluates fraud detection capabilities.
+### **4.2 Evaluation Metrics**
+- Accuracy, Precision, Recall, F1-score.
 
-### 4.2 Experimental Setup
-- **Training**: Adam optimizer, cross-entropy loss, and learning rate scheduler.
-- **Evaluation Metrics**: F1 Score, Precision, Recall, and Accuracy.
-
-### 4.3 Comparison Models
-- Naive Bayes, KNN, DNN (no embeddings), and LSTM.
-
-### 4.4 Results
-- Ablation study results demonstrating the impact of convolutional and attention mechanisms.
-- Comparison with baselines showing performance gains in both accuracy and efficiency.
+### **4.3 Comparative Analysis**
+- **Baseline Models**: Naive Bayes, KNN, LSTM, and DNN.
+- **Proposed Hybrid Framework**: Demonstrates superior performance in accuracy and efficiency.
 
 ---
 
-## 5. Discussion
-- Analysis of why CNN and Selective Attention improve text classification.
-- Trade-offs between parameter size and accuracy.
-- Limitations: Potential challenges with very large or noisy datasets.
+## **5. Results**
+- **Model Performance**:
+  - CNN + Self-Attention achieved the highest F1-score (X%).
+  - Selective Attention mechanism contributed to a Y% performance boost.
+- **Ablation Study**:
+  - Removing CNN led to a significant performance drop (-Z%).
+  - Self-Attention independently showed limited results but combined with CNN improved outcomes.
 
 ---
 
-## 6. Conclusion
-- Summary of contributions and key findings.
-- Future work: Exploring transformer-based enhancements and further scalability improvements.
+## **6. Discussion**
+- **Strengths**:
+  - Efficient processing of sequence data.
+  - Enhanced performance in capturing both local and global textual features.
+- **Limitations**:
+  - Higher computational cost than traditional methods.
 
 ---
 
-## References
+## **7. Conclusion**
+- This study presents a novel hybrid framework combining CNN and Self-Attention for efficient text classification.
+- Future work includes optimizing the architecture for real-time applications and exploring other datasets.
+
+---
+
+## **References**
 1. Kim, Y. (2014). *Convolutional Neural Networks for Sentence Classification*. [Link](https://arxiv.org/abs/1408.5882)
 2. Vaswani, A., et al. (2017). *Attention Is All You Need*. [Link](https://arxiv.org/abs/1706.03762)
-3. Singh, P.K., & Singh, K.N. (2025). *Label the Unlabeled Data Using Supervised Learning*. [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5097408)
+3. Bahrin, U.F.M., & Jantan, H. (2025). *Comparative Analysis of Sentiment Analysis Using ML & DL Techniques*. [Link](https://www.researchgate.net/publication/387837089)
 
 ---
 
-## Appendix
-### A. Model Hyperparameters
-| Parameter          | Value        |
-|--------------------|--------------|
-| Embedding Dimension| 300          |
-| Convolution Filters| 128          |
-| Attention Heads    | 4            |
-| Learning Rate      | 0.001        |
-| Batch Size         | 64           |
 
-### B. Ablation Study Results
-| Model Variant                  | Accuracy | F1 Score | Precision | Recall |
-|--------------------------------|----------|----------|-----------|--------|
-| CNN + Self-Attention           | 0.89     | 0.88     | 0.87      | 0.89   |
-| CNN Only                       | 0.85     | 0.84     | 0.83      | 0.85   |
-| Self-Attention Only            | 0.82     | 0.80     | 0.79      | 0.82   |
-| No CNN, No Self-Attention      | 0.75     | 0.73     | 0.72      | 0.75   |
+
 
