@@ -22,11 +22,10 @@ Text classification plays a vital role in various applications such as e-commerc
 ---
 
 ## **2. Related Work**
-- **CNN in Text Classification**: Kim et al. (2014) demonstrated CNN's ability to extract local n-gram features effectively.
-- **Self-Attention Mechanisms**: Vaswani et al. (2017) introduced attention as a mechanism to capture global dependencies.
-- **Limitations of Traditional Models**: Naive Bayes and KNN struggle with long sequences and computational efficiency.
-- **Hybrid Architectures**: Recent works explored the combination of CNN and attention mechanisms for enhanced performance.
-
+- **(C-PsyD: A Chinese Text Classification Model for Detecting Psychological Problems)[https://assets-eu.researchsquare.com/files/rs-5337854/v1/310abd99-1943-4c45-a55f-7e5d9b736b2b.pdf?c=1737116245]
+提出了一種名為 C-PsyD 的中文文本分類模型，用於心理問題的檢測。
+目的是結合CNN、BiGRU、Attention和Self-Attention，設計一個性能優越的文本分類模型。
+與其他六種模型進行性能比較，包括 FastText、TextCNN、Simple-RNN、LSTM、BiLSTM 和 ST_MFLC。
 ---
 
 ## **3. Methodology**
@@ -79,18 +78,6 @@ Text classification plays a vital role in various applications such as e-commerc
 
 ---
 
-## **7. Conclusion**
-- This study presents a novel hybrid framework combining CNN and Self-Attention for efficient text classification.
-- Future work includes optimizing the architecture for real-time applications and exploring other datasets.
-
----
-
-## **References**
-1. Kim, Y. (2014). *Convolutional Neural Networks for Sentence Classification*. [Link](https://arxiv.org/abs/1408.5882)
-2. Vaswani, A., et al. (2017). *Attention Is All You Need*. [Link](https://arxiv.org/abs/1706.03762)
-3. Bahrin, U.F.M., & Jantan, H. (2025). *Comparative Analysis of Sentiment Analysis Using ML & DL Techniques*. [Link](https://www.researchgate.net/publication/387837089)
-
----
 
 
 
