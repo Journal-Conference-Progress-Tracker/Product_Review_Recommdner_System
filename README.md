@@ -26,6 +26,11 @@ Text classification plays a vital role in various applications such as e-commerc
 - 提出了一種名為 C-PsyD 的中文文本分類模型，用於心理問題的檢測。
 - 目的是結合CNN、BiGRU、Attention和Self-Attention，設計一個性能優越的文本分類模型。
 - 與其他六種模型進行性能比較，包括 FastText、TextCNN、Simple-RNN、LSTM、BiLSTM 和 ST_MFLC。
+
+[Cyberbullying Detection in Social Networks Using Deep Learning](https://www.iajit.org/upload/files/Cyberbullying-Detection-in-Social-Networks-Using-Deep-Learning.pdf)
+- 使用Facebook data，包含 11,000 條已標記的評論（分為乾淨或霸凌）
+- 比較CNN、LSTM、CNN-LSTM、BERT
+- BERT 最佳，CNN-LSTM第二
 ---
 
 ## **3. Methodology**
