@@ -31,6 +31,11 @@ Text classification plays a vital role in various applications such as e-commerc
 - 使用Facebook data，包含 11,000 條已標記的評論（分為乾淨或霸凌）(二元分類)
 - 比較CNN、LSTM、CNN-LSTM、BERT
 - BERT 最佳，CNN-LSTM第二
+
+[malDetect: Malware Classification Using API Sequence and Comparison with Transformer Encoder](https://ieeexplore.ieee.org/abstract/document/10731782)
+- 提出了一種基於CNN-LSTM的改進模型來檢測和分類惡意軟體程序
+- 使用的資料是動態運行後擷取的Windows API序列。文字處理方法也適用於處理序列資料
+- 該模型將 BiLSTM 模型與 Self-Attention 機制結合，命名為 malDetect II，比基本模型 CNN-LSTM 提升了 11.46%，比 Transformer Encoder 分類模型提升了 2.82%。
 ---
 
 ## **3. Methodology**
