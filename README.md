@@ -22,10 +22,10 @@ Text classification plays a vital role in various applications such as e-commerc
 ---
 
 ## **2. Related Work**
-(C-PsyD: A Chinese Text Classification Model for Detecting Psychological Problems)[https://assets-eu.researchsquare.com/files/rs-5337854/v1/310abd99-1943-4c45-a55f-7e5d9b736b2b.pdf?c=1737116245]
--提出了一種名為 C-PsyD 的中文文本分類模型，用於心理問題的檢測。
--目的是結合CNN、BiGRU、Attention和Self-Attention，設計一個性能優越的文本分類模型。
--與其他六種模型進行性能比較，包括 FastText、TextCNN、Simple-RNN、LSTM、BiLSTM 和 ST_MFLC。
+[C-PsyD: A Chinese Text Classification Model for Detecting Psychological Problems](https://assets-eu.researchsquare.com/files/rs-5337854/v1/310abd99-1943-4c45-a55f-7e5d9b736b2b.pdf?c=1737116245)
+提出了一種名為 C-PsyD 的中文文本分類模型，用於心理問題的檢測。
+目的是結合CNN、BiGRU、Attention和Self-Attention，設計一個性能優越的文本分類模型。
+與其他六種模型進行性能比較，包括 FastText、TextCNN、Simple-RNN、LSTM、BiLSTM 和 ST_MFLC。
 ---
 
 ## **3. Methodology**
